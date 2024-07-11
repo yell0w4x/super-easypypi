@@ -24,7 +24,7 @@ c = Color
 def cli(args=sys.argv[1:]):
     desc = 'Super EasyPyPi. Simple and easy to use tools for creating and publishing python packages.'
 
-    parser = ArgumentParser(prog='easypypi', description=desc)
+    parser = ArgumentParser(prog='supereasypypi', description=desc)
     parser.add_argument('-d', '--dir', default=os.environ.get('PWD', '.'), required=False, 
         help='Directory to create package in (default: %(default)s)')
     parser.add_argument('--replace-char', default='', required=False, 

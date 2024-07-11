@@ -103,8 +103,8 @@ done
 set -eu
 
 VERSION="$(cat ${{SCRIPT_DIR}}/VERSION)"
-sed -E -i "s/version = [0-9]\.[0-9]\.[0-9]/version = ${{VERSION}}/g" "${{SCRIPT_DIR}}/setup.cfg"
-sed -E -i "s/__version__ = '[0-9]\.[0-9]\.[0-9]'/__version__ = '${{VERSION}}'/g" "${{SCRIPT_DIR}}/src/{adapted_package_name}/__init__.py"
+sed -E -i "s/version = [0-9]+\.[0-9]+\.[0-9]+/version = ${{VERSION}}/g" "${{SCRIPT_DIR}}/setup.cfg"
+sed -E -i "s/__version__ = '[0-9]+\.[0-9]+\.[0-9]+'/__version__ = '${{VERSION}}'/g" "${{SCRIPT_DIR}}/src/{adapted_package_name}/__init__.py"
 
 if [ -d "${{VENV_DIR}}" ]; then
     source "${{VENV_DIR}}/bin/activate"
