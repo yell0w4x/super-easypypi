@@ -1,9 +1,5 @@
 # Super EasyPyPi
 
-<p align="center">
-    <img src="https://github.com/yell0w4x/assets/blob/0cea6a144cd7d51e88a3fb2fbfb7894c427a6f52/easypypi.gif" alt="bmatrix"/>
-</p>
-
 ```
 pip install super-easypypi
 ```
