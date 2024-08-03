@@ -49,10 +49,10 @@ def cli(args=sys.argv[1:]):
         help='Test PyPi token. (default: "%(default)s")')
     parser.add_argument('-f', '--force', default=False, required=False, action='store_true',
         help='Overwrite existing files. By default exits with error. (default: %(default)s)')
-    parser.add_argument('-v', '--version', action='version', version=f'%(prog)s {__version__}', 
-        help='Prints EasyPyPi version.')
     parser.add_argument('-i', '--interactive', action='store_true', 
         help='Use wizard like interactive mode to fill in fields.')
+    parser.add_argument('-v', '--version', action='version', version=f'%(prog)s {__version__}', 
+        help='Prints EasyPyPi version.')
 
     parser.add_argument('package_name', metavar='PACKAGE_NAME', help='Package name you would like to appear in PyPi. ' 
         'Preferrably use dashes to separate words like "my-package". Undescores will be replaced with dashes.')

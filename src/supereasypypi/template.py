@@ -366,6 +366,7 @@ def files_list():
         dict(name='pyproject.toml', fields=extract_fields(PROJECT_TOML), template_str=PROJECT_TOML, src=False),
         dict(name='build', fields=extract_fields(BUILD), template_str=BUILD, src=False, exec=True),
         dict(name='LICENSE', fields=extract_fields(LICENSE), template_str=LICENSE, src=False),
+        dict(name='README.md', fields=extract_fields(README_MD), template_str=README_MD, src=False),
         dict(name='.gitignore', fields=extract_fields(GITIGNORE), template_str=GITIGNORE, src=False),
         dict(name='.env', fields=extract_fields(ENV), template_str=ENV, src=False),
         dict(name='requirements.txt', fields=extract_fields(REQUIREMENTS_TXT), template_str=REQUIREMENTS_TXT, src=False),

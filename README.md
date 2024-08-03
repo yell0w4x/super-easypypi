@@ -12,13 +12,30 @@ $ supereasypypi my-package
 Then to push to production repo.
 
 ```
-my-package/build --push
+$ my-package/build --push
 ```
 
 And to push to test repo.
 
 ```
-my-package/build --push --test
+$ my-package/build --push --test
+```
+
+```
+$ my-package/build --help
+Build and push library to pypi index.
+
+Usage:
+    my-package/build [OPTIONS] [EXTRA_ARGS]
+
+All the EXTRA_ARGS are passed to twine. 
+Credentials are in ~/.pypirc.
+
+Options:
+    --push      Push to pypi
+    --test      Use test pypi
+    --debug     Set bash 'x' option
+    --help      Shows help message
 ```
 
 To overwrite existing files use `-f` option. For interactive mode use `-i` option.
